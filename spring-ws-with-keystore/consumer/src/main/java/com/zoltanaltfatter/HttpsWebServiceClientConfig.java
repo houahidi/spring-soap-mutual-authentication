@@ -1,5 +1,11 @@
 package com.zoltanaltfatter;
 
+import java.io.IOException;
+import java.security.KeyStore;
+
+import javax.net.ssl.KeyManagerFactory;
+import javax.net.ssl.TrustManagerFactory;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,14 +17,8 @@ import org.springframework.context.annotation.Profile;
 import org.springframework.core.io.Resource;
 import org.springframework.oxm.jaxb.Jaxb2Marshaller;
 import org.springframework.ws.client.core.WebServiceTemplate;
-import org.springframework.ws.soap.security.wss4j2.Wss4jSecurityInterceptor;
 import org.springframework.ws.transport.WebServiceMessageSender;
 import org.springframework.ws.transport.http.HttpsUrlConnectionMessageSender;
-
-import javax.net.ssl.KeyManagerFactory;
-import javax.net.ssl.TrustManagerFactory;
-import java.io.IOException;
-import java.security.KeyStore;
 
 /**
  * @author Zoltan Altfatter

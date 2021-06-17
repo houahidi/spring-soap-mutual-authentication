@@ -1,13 +1,9 @@
 package com.zoltanaltfatter;
 
 
-import org.apache.wss4j.common.crypto.Crypto;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.core.io.ClassPathResource;
 import org.springframework.oxm.jaxb.Jaxb2Marshaller;
-import org.springframework.ws.soap.security.wss4j2.Wss4jSecurityInterceptor;
-import org.springframework.ws.soap.security.wss4j2.support.CryptoFactoryBean;
 
 @Configuration
 public class CommonWebServiceClientConfig {

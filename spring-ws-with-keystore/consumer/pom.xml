@@ -39,16 +39,18 @@
 		      <scope>test</scope>
 		    </dependency>
 
-        <!-- pulls in wss4j-ws-security-dom:2.2.0 -->
+        <!-- pulls in wss4j-ws-security-dom:2.2.0 
         <dependency>
             <groupId>org.springframework.ws</groupId>
             <artifactId>spring-ws-security</artifactId>
         </dependency>
-
+		-->
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
         </dependency>
+        
+        
 
 
     </dependencies>

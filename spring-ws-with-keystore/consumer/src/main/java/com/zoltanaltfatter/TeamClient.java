@@ -1,17 +1,15 @@
 package com.zoltanaltfatter;
 
-import com.eufa.euro.GetTeamRequest;
-import com.eufa.euro.GetTeamResponse;
-
-import ch.qos.logback.core.joran.spi.NoAutoStart;
-import lombok.extern.slf4j.Slf4j;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.ws.client.core.WebServiceTemplate;
+
+import com.eufa.euro.GetTeamRequest;
+import com.eufa.euro.GetTeamResponse;
+
+import lombok.extern.slf4j.Slf4j;
 
 /**
  * @author Zoltan Altfatter

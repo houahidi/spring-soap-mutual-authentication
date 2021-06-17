@@ -1,6 +1,17 @@
-mvn clean package spring-boot:run  -Dspring.profiles.active=https# SOAP over HTTPS with client certificate authentication
+Objectif : Interroger Un Web Service SOAP avec une authentification mutuelle 
+
+Adaptation du Projet soap-over-https-with-client-certificate-authentication disponible à 
+
+https://zoltanaltfatter.com/2016/04/30/soap-over-https-with-client-certificate-authentication/
+
+pré-requis : 
+
+	- git 
+	- Java 8+
+	- Apache Maven 
 
 ```
+$ git clone https://github.com/houahidi/spring-soap-mutual-authentication.git
 $ cd spring-ws-with-keystore
 $
 ```
@@ -9,7 +20,7 @@ Start the uefa-service with:
 
 ```
 $ cd producer
-$ mvn clean package spring-boot:run  -Dspring.profiles.active=https 
+$ mvn clean spring-boot:run  -Dspring.profiles.active=https 
 ```
 
 #### SoapUI
@@ -27,5 +38,5 @@ Start the client with
 
 ```
 $ cd consumer
-$ mvn clean package spring-boot:run -Dspring-boot.run.arguments=AL -Dspring.profiles.active=https
+$ mvn clean spring-boot:run -Dspring-boot.run.arguments=AL -Dspring.profiles.active=https
 ```
