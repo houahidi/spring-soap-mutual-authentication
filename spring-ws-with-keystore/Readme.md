@@ -12,7 +12,7 @@ pré-requis :
 
 ```
 $ git clone https://github.com/houahidi/spring-soap-mutual-authentication.git
-$ cd spring-ws-with-keystore
+$ cd spring-soap-mutual-authentication/spring-ws-with-keystore
 $
 ```
 
@@ -34,7 +34,8 @@ Make a `getTeamRequest` using the example sending the SOAP message to `https://l
 
 #### java client
 
-Start the client with
+Start the client
+  - input : code pays (AL | FR )
 
 ```
 $ cd consumer
